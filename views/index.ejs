@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title><%= profile.name %>의 프로필</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">소개</a> |
+    <a href="/foods">좋아하는 음식</a> |
+    <a href="/timetable">수업 시간표</a>
+    | <a href="/gugudan_2">구구단</a>
+  </nav>
+
+  <div class="card profile">
+    <div class="center">
+      <img class="profile-photo" src="/images/profile.jpg" alt="<%= profile.name %> 사진">
+    </div>
+    <h1><%= profile.name %></h1>
+    <p><%= profile.school %></p>
+    <p class="center"><%= profile.intro %></p>
+  </div>
+</body>
+</html>
